@@ -1,3 +1,4 @@
+```swift
 override func viewDidLoad() {
 super.viewDidLoad()
 print(className, #function)
@@ -21,6 +22,5 @@ print(className, #function)
 deinit {
 print(className, #function)
 }
-
-
+```
 
