@@ -42,7 +42,7 @@ class TimerViewController: UIViewController {
         // 2. 생성자로 타이머 생성
         // 런루프에 타이머를 추가한 후 fire 매소드를 실행해야 함
         timer = Timer(timeInterval: 1, target: self, selector: #selector(timerFired(_:)), userInfo: nil, repeats: true)
-        // 허용오차를 적용하면 ios가 실행주기를 조절함
+        // tolerance : 타이머는 오차 없이 동작하는 것이 아니다. 하지만 허용오차를 적용하면 ios가 실행주기를 조절한다. 이런 최적화를 통해서 배터리를 절약하고 응답성을 향상시킨다.
         timer?.tolerance = 0.2
         RunLoop.current.add(timer!, forMode: .defaultRunLoopMode)
         timer?.fire()
