@@ -1,6 +1,6 @@
-# Today_I_Learned_iOS
+# iOS 저장소
 
-ios개발자가 되기 위해 공부하면서 정리한 포스트 목록입니다.
+ios개발을 하면서 정리한 포스트와 코드를 공유합니다.
 
 ### Contents
 👾 [Swift의 Struct와 Class의 메모리 저장 방식의 차이](https://ahyeonlog.tistory.com/1)  
