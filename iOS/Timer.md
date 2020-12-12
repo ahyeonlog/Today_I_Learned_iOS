@@ -77,3 +77,5 @@ class TimerViewController: UIViewController {
 }
 
 ```
+
+타이머를 사용할 때에는 적절한 곳에 `invalidate` 메소드를 호출해서 리소스가 낭비되는 것을 막아야 함을 주의하자!
