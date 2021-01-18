@@ -31,6 +31,9 @@ backgroundColor
 ```
 `completion` : animation이 정상적으로 완료되면 true, 아니면 false가 전달
 
+
+# UIView Animation Option
+
 ```swift
     @IBAction func animate(_ sender: Any) {
         let animations: () -> () = {
@@ -47,4 +50,12 @@ backgroundColor
         UIView.animate(withDuration: 1, delay: 0.0, options: [.curveLinear, .repeat, .autoreverse], animations: animations, completion: nil)
     }
 ```
-     
+
+```swift
+    // UIView Animation은 개별 애니메이션 중지할 수 없음(iOS 4에서 나온 오래된 것)
+    // ==> 프로퍼티 애니메이터를 사용
+    @IBAction func stop(_ sender: Any) {
+        redView.layer.removeAllAnimations()
+        reset(nil)
+    }
+```
