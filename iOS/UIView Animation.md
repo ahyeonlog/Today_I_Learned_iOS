@@ -59,3 +59,8 @@ backgroundColor
         reset(nil)
     }
 ```
+
+
+참고
+- [UIView](https://developer.apple.com/documentation/uikit/uiview)
+- [UIView.AnimationOptions](https://developer.apple.com/documentation/uikit/uiview/animationoptions)
