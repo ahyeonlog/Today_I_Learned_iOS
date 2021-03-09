@@ -7,6 +7,7 @@ class ButtonStateViewController: UIViewController {
     
     @IBAction func report(_ sender: UIButton) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            // debugString: state를 문자열로 변경
             self.stateLabel.text = sender.state.debugString
         }
     }
@@ -18,9 +19,9 @@ class ButtonStateViewController: UIViewController {
             btn.isSelected = false
             btn.isHighlighted = false
         case 1:
-            btn.isHighlighted = true
+            btn.isHighlighted.toggle()
         case 2:
-            btn.isSelected = true
+            btn.isSelected.toggle()
         case 3:
             btn.isEnabled = false
         default:
@@ -28,7 +29,6 @@ class ButtonStateViewController: UIViewController {
         }
         report(btn)
     }
-    
     
     
     
